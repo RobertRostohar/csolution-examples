@@ -20,3 +20,6 @@ project:
     - layer: ./Board/B-U585I-IOT02A/Board.clayer.yml
       for-type:
         - +B-U585I-IOT02A
+    - layer: ./Board/IMXRT1050-EVKB/Board.clayer.yml
+      for-type:
+        - +IMXRT1050-EVKB
