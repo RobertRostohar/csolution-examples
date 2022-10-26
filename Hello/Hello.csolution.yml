@@ -7,11 +7,16 @@ solution:
     - pack: ARM::CMSIS
     - pack: Keil::ARM_Compiler                # for retargeting stdout to UART
     - pack: ARM::V2M_MPS3_SSE_300_BSP@1.2.0   # optional packs can specify a version
+    - pack: Keil::STM32U5xx_DFP@2.0.0
+    - pack: Keil::B-U585I-IOT02A_BSP@1.0.0
 
 
   target-types:
     - type: AVH                               # runs on Arm Virtual Hardware
       device: ARM::SSE-300-MPS3
+    - type: B-U585I-IOT02A
+      board: STMicroelectronics::B-U585I-IOT02A
+      device: STMicroelectronics::STM32U585AIIx
                                               # add more hardware targets (don't forget to add the required packs)
 
   build-types:                                # defines toolchain options for 'debug' and 'release'
