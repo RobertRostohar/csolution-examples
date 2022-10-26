@@ -5,10 +5,15 @@ solution:
 # it's recommended to list the packs that are used by the solution, otherwise all installed packs are used to discover components
   packs:
     - pack: ARM::CMSIS
+    - pack: ARM::CMSIS-Driver
     - pack: Keil::ARM_Compiler                # for retargeting stdout to UART
     - pack: ARM::V2M_MPS3_SSE_300_BSP@1.2.0   # optional packs can specify a version
     - pack: Keil::STM32U5xx_DFP@2.0.0
     - pack: Keil::B-U585I-IOT02A_BSP@1.0.0
+    - pack: NXP::MIMXRT1052_DFP@15.0.0
+    - pack: NXP::EVKB-IMXRT1050_BSP@15.0.0
+    - pack: Keil::IMXRT1050-EVKB_BSP@1.1.0
+    - pack: Keil::iMXRT105x_MWP@1.5.0
 
 
   target-types:
@@ -17,6 +22,8 @@ solution:
     - type: B-U585I-IOT02A
       board: STMicroelectronics::B-U585I-IOT02A
       device: STMicroelectronics::STM32U585AIIx
+    - type: IMXRT1050-EVKB
+      device: NXP::MIMXRT1052DVL6B
                                               # add more hardware targets (don't forget to add the required packs)
 
   build-types:                                # defines toolchain options for 'debug' and 'release'
