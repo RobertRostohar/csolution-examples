@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Open-CMSIS-Pack/devtools/schemas/projmgr/1.0.0/tools/projmgr/schemas/clayer.schema.json
+
+layer:
+  description: Board setup
+  groups:
+    - group: Board
+      files:
+        - file: ./main.c
+        - file: ./retarget_stdio.c
+
+  add-paths:
+    - .
+
+  components:
+    - component: CMSIS:CORE
+    - component: CMSIS Driver:USART
+    - component: ARM::Device:Startup&Baremetal
+    - component: ARM::Native Driver:IO
+    - component: ARM::Native Driver:UART
+    - component: Compiler:I/O:STDERR&User
+    - component: Compiler:I/O:STDIN&User
+    - component: Compiler:I/O:STDOUT&User
+    - component: Device:Definition
+    - component: Device:Startup&Baremetal
