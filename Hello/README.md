@@ -47,7 +47,7 @@ The project is configured for execution on Arm Virtual Hardware which removes th
  
 - When using MDK-Professional, you may execute it with the command:
   ```
-  > VHT_Corstone_SSE-300_Ethos-U55 -f vht-config.txt -a ./out/Hello/AVH/Debug/Hello.Debug+AVH.axf
+  > VHT_Corstone_SSE-300_Ethos-U55 -f Board/AVH/vht-config.txt -a ./out/Hello/AVH/Debug/Hello.Debug+AVH.axf
   ```
 
 - [Keil Studio Cloud](https://studio.keil.arm.com/) integrates also the Arm Virtual Hardware VHT_Corstone_SSE-300_Ethos-U55 model. The steps to use the example are:
