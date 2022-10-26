@@ -17,3 +17,6 @@ project:
     - layer: ./Board/AVH/Board.clayer.yml
       for-type:
         - +AVH
+    - layer: ./Board/B-U585I-IOT02A/Board.clayer.yml
+      for-type:
+        - +B-U585I-IOT02A
